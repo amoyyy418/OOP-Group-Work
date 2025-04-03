@@ -6,4 +6,21 @@ public class Appointment
     private Date appointmentDate;
     private String status; 
     private String purpose;
+
+    public int getAppointmentId() 
+    { 
+        return appointmentId; 
+    }
+    public void setStatus(String status) 
+    { 
+        this.status = status; 
+    }
+}
+public class AppointmentSetter 
+{
+    public void bookAppointment(int patientId, int doctorId, Date date, String purpose) { ... }
+    public void cancelAppointment(int appointmentId) { ... }
+    public void rescheduleAppointment(int appointmentId, Date newDate) { ... }
+    public List<TimeSlot> getAvailableSlots(int doctorId, Date date) { ... }
+    public List<Appointment> getUpcomingAppointments(int userId, String role) { ... }
 }
