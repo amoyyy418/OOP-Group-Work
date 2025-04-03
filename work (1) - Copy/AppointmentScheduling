@@ -1,0 +1,9 @@
+public class Appointment 
+{
+    private int appointmentNumber;
+    private int patientNumber;
+    private int doctorNumber;
+    private Date appointmentDate;
+    private String status; 
+    private String purpose;
+}
