@@ -1,4 +1,4 @@
-public class Appointment 
+class Appointment 
 {
     private int appointmentNumber;
     private int patientNumber;
@@ -16,7 +16,7 @@ public class Appointment
         this.status = status; 
     }
 }
-public class AppointmentSetter 
+class AppointmentSetter 
 {
     public void bookAppointment(int patientId, int doctorId, Date date, String purpose) { ... }
     public void cancelAppointment(int appointmentId) { ... }
